@@ -1,0 +1,50 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="splashGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1e40af" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Main container -->
+  <g transform="translate(100, 100)">
+    <!-- Phone body with shadow -->
+    <rect x="-35" y="-60" width="70" height="120" rx="12" ry="12" 
+          fill="url(#splashGradient)" filter="url(#shadow)"/>
+    
+    <!-- Phone screen -->
+    <rect x="-28" y="-45" width="56" height="90" rx="6" ry="6" fill="#f8fafc"/>
+    
+    <!-- Large heart icon on screen -->
+    <g transform="translate(0, -5) scale(0.8)">
+      <path d="M0,20 C-20,-8 -60,-8 -60,20 C-60,48 0,88 0,88 C0,88 60,48 60,20 C60,-8 20,-8 0,20 Z" 
+            fill="#ef4444" filter="url(#shadow)"/>
+      <!-- Heart highlight -->
+      <ellipse cx="-15" cy="5" rx="8" ry="6" fill="#fca5a5" opacity="0.6"/>
+    </g>
+    
+    <!-- Phone speaker -->
+    <rect x="-18" y="-52" width="36" height="3" rx="1.5" ry="1.5" fill="#64748b"/>
+    
+    <!-- Phone home button -->
+    <circle cx="0" cy="45" r="6" fill="#64748b"/>
+    <circle cx="0" cy="45" r="3" fill="#94a3b8"/>
+    
+    <!-- Signal waves with animation effect -->
+    <g transform="translate(50, -30)">
+      <path d="M0,0 Q8,-8 16,0" stroke="#10b981" stroke-width="2.5" fill="none" opacity="0.8"/>
+      <path d="M0,8 Q12,-4 24,8" stroke="#10b981" stroke-width="2.5" fill="none" opacity="0.6"/>
+      <path d="M0,16 Q16,0 32,16" stroke="#10b981" stroke-width="2.5" fill="none" opacity="0.4"/>
+    </g>
+    
+    <!-- Decorative elements -->
+    <circle cx="-70" cy="-40" r="3" fill="#bae6fd" opacity="0.6"/>
+    <circle cx="65" cy="50" r="4" fill="#ddd6fe" opacity="0.5"/>
+    <circle cx="-60" cy="60" r="2" fill="#fde68a" opacity="0.7"/>
+  </g>
+</svg>

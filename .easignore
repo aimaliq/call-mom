@@ -1,0 +1,15 @@
+# Browser/System cache
+**/AppData/**
+AppData/
+**/Local/**
+**/AMD/**
+**/Cache/**
+**/DxCache/**
+*.bin
+
+# Node
+node_modules/
+
+# Expo
+.expo/
+dist/

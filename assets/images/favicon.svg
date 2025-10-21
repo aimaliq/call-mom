@@ -1,0 +1,29 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="#E6F4FE" stroke="#bae6fd" stroke-width="1"/>
+  
+  <!-- Phone icon simplified for small size -->
+  <g transform="translate(16, 16)">
+    <!-- Phone body -->
+    <rect x="-4" y="-8" width="8" height="16" rx="2" ry="2" fill="url(#phoneGradient)"/>
+    
+    <!-- Heart icon simplified -->
+    <g transform="translate(0, -2) scale(0.3)">
+      <path d="M0,8 C-8,-4 -24,-4 -24,8 C-24,20 0,36 0,36 C0,36 24,20 24,8 C24,-4 8,-4 0,8 Z" 
+            fill="#ef4444"/>
+    </g>
+    
+    <!-- Phone speaker -->
+    <rect x="-2" y="-6" width="4" height="1" rx="0.5" ry="0.5" fill="#f8fafc"/>
+    
+    <!-- Phone home button -->
+    <circle cx="0" cy="6" r="1" fill="#f8fafc"/>
+  </g>
+</svg>
